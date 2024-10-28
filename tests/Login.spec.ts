@@ -22,7 +22,7 @@ test.describe('Feature: Login account', () => {
 
     test('test de connexion avec Email valide', async ({ page }) => {
         // On Entre un email valide et le mdp
-        await loginPage.login('charpentierlouis011@gmail.com', 'Test@test.com7878$');
+        await loginPage.login('mail', 'Password');
     
         // Vérification conditionnelle : soit on est sur la page d'accueil, soit on doit entrer un numéro de téléphone
         try {
