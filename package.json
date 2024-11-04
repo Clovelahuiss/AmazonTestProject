@@ -3,13 +3,21 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test-card": "npx playwright test cart.spec.ts --project=chromium",
+    "test-login": "npx playwright test login.spec.ts --project=chromium",
+    "test-creation": "npx playwright test AccountCreation.spec.ts --project=chromium"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@faker-js/faker": "^9.0.3",
-    "@playwright/test": "^1.48.0",
-    "@types/node": "^22.7.5"
+    "@playwright/test": "^1.48.2",
+    "@types/node": "^22.7.5",
+    "allure-playwright": "^3.0.6"
+  },
+  "dependencies": {
+    "faker": "^6.6.6"
   }
 }
